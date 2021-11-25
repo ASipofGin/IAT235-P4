@@ -1,0 +1,211 @@
+/* CSS Variables declared here, they are the colours we will be using throughout the page */
+
+:root{
+    --primary: rgb(240, 240, 240);
+    --dark: rgb(62, 67, 82);
+    --light: rgb(231, 231, 231);
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
+}
+
+/* Global Styling applied here, including border box to keep margins in check, set font family/colour, body text/img styles and button styles */
+html{
+    box-sizing: border-box;
+    font-family: Roboto, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--dark);
+
+}
+
+.low-container h2{
+    font-size: 1.3rem;
+}
+
+body{
+    background: rgb(194, 194, 194);
+    margin: 1rem 1rem;
+    line-height: 1.6rem;
+}
+
+.btn{
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.wrapper{
+    display: grid;
+}
+
+/* Navigation */
+
+.main-nav ul{
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    /* repeat columns for each page, so 8 in this case */
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.main-nav a{
+    display: block;
+    background: var(--primary);
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover{
+    background:var(--dark);
+    color: var(--light);
+}
+
+
+/* Mid Container */
+.mid-container{
+    display: grid;
+    grid-template-areas: 
+    'showcase-mid showcase-mid';
+}
+
+.showcase-mid{
+    grid-area: showcase-mid;
+    min-height: 300px;
+    background-image: url(img/Extra_Images/Concord_Pacific_Master_Plan_Area_CROPPED_DARK.jpg);
+    background-size: 1700px;
+    background-image:cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    color: var(--light)
+
+}
+
+/* Main header hierarchy here! */
+.showcase-mid h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.showcase-mid h3{
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+.showcase-mid p{
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+
+/* Low Container */
+.low-container{
+    display:inline-block;
+    text-align: center;
+    padding: 5rem;
+    padding-bottom: 1rem;
+}
+
+.h3{
+    font-style: italic;
+}
+
+
+/* Boxes */
+.boxes{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+.box{
+    align-items: baseline;
+    background: var(--light);
+    text-align: left;
+    text-justify: inter-cluster;
+    padding: 1rem 1rem;
+    box-shadow:var(--shadow);
+    max-width: 30rem;
+    max-height: 40rem;
+
+}
+
+.box-img{
+    width: 500px;
+    height: 500px;
+    min-width: 250px;
+    object-fit: cover;
+}
+
+
+/* Partnership Info */
+.info{
+    justify-self: center;
+    min-height: 100px;
+    max-height: 400px;
+    max-width: 1400px;
+    background-image: url(img/Extra_Images/handshake_DARK.jpg);
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+}
+
+/* Footer */
+footer{
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+}
+
+
+/* Media Queries */
+@media(max-width: 1050px){
+    .main-nav ul{
+        /* switch to 2 cols */
+        grid-template-columns: 1fr 1fr;
+    }
+    .showcase-mid h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .showcase-mid h3, .low-container h3{
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 0.5rem;
+    }
+    
+}
+
+@media(max-width: 600px){
+    .main-nav ul{
+        grid-gap: 1rem;
+        /* switch to 1 col */
+        grid-template-columns: 1fr;
+    }
+    .showcase-mid h1{
+        line-height: 3rem;
+    }
+    
+}
