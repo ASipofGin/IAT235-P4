@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid.add-gutters{
+    grid-column-gap: 1rem;
+}
+
+@media(min-width: 31.25rem){
+    .grid.one-column{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto ;
+        grid-auto-flow: row;
+    }
+}
+
+ 
+/* 36.25rem 2 columns*/
+@media(min-width: 47.563rem){    
+    .grid.two-column{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+		grid-auto-flow: row;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 1 rem;
+
+    }
+}
+
+/* 3 columns*/
+@media(min-width: 60rem){    
+    .grid.three-column{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+		grid-auto-flow: row;
+    }
+}
+
+/* 5 columns not going into 5 for some reason fix this later*/
+@media(min-width: 75rem){    
+    .grid.five-column{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        grid-template-rows: auto;
+		grid-auto-flow: row;
+    }
+}
+/*

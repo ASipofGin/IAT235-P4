@@ -1,0 +1,190 @@
+:root{
+    --primary: rgb(240, 240, 240);
+    --dark: rgb(62, 67, 82);
+    --light: rgb(231, 231, 231);
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1.5rem;
+    margin: 0.83rem;
+
+    background: rgb(194, 194, 194);
+    margin: 1rem 1rem;
+    line-height: 1.6rem;
+}
+
+.btn{
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+
+h1 {
+    font-size: 4rem;
+    font-style: bold;
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    font-size: 1.3rem;
+    font-size: bold;
+    margin-bottom: 0.25rem;
+}
+
+h3{
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: 0.25rem;
+}
+
+p{
+    font-size: 1.1rem;
+    font-style:italic;
+    margin-bottom: 0.25rem;
+}
+
+/* Boxes */
+.boxes{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+.box{
+    align-items: baseline;
+    background: var(--light);
+    text-align: left;
+    text-justify: inter-cluster;
+    padding: 1rem 1rem;
+    box-shadow:var(--shadow);
+    max-width: 30rem;
+    max-height: 40rem;
+
+}
+
+.box-img{
+    width: 31.25rem;
+    height: 31.25rem;
+    min-width: 15.625rem;
+    object-fit: cover;
+}
+
+
+p, ul, ol {
+    max-width:40rem;
+}
+
+img{
+    max-width: 100%;
+    margin-top: 2rem;
+    height: auto;
+}
+
+
+.main-nav ul{
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    /* repeat columns for each page, so 8 in this case */
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.main-nav a{
+    display: block;
+    background: var(--primary);
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover{
+    background:var(--dark);
+    color: var(--light);
+}
+
+.mid-container{
+    display: grid;
+    grid-template-areas: 
+    'showcase-mid showcase-mid';
+}
+
+.showcase-mid{
+    grid-area: showcase-mid;
+    min-height: 300px;
+    background-image: url(/img/Concord_Pacific_Master_Plan_Area_CROPPED_DARK.jpg);
+    background-size: 1700px;
+    background-image:cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    color: var(--light)
+
+}
+
+/* Main header hierarchy here! */
+.showcase-mid h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.showcase-mid h3{
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+.showcase-mid p{
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+
+/* Low Container */
+.low-container{
+    display:inline-block;
+    text-align: center;
+    padding: 5rem;
+    padding-bottom: 1rem;
+}
+
+/* Footer */
+footer{
+    min-width: auto;
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+}
+
+@media(max-width:71.875rem){
+    .main-nav ul{
+        grid-gap: 1rem;
+        grid-template-columns: 1fr
+    
+    }
+    h1{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    h2{
+        font-size: 1.8 rem;
+    }
+    h3{
+        font-size: 1.1rem;
+        font-style: italic;
+        margin-bottom: 0.5rem;
+    }
+}
