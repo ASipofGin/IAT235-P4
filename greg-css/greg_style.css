@@ -12,11 +12,6 @@ html{
     box-sizing: border-box;
     font-family: Roboto, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--dark);
-
-}
-
-.low-container h2{
-    font-size: 1.3rem;
 }
 
 body{
@@ -39,6 +34,31 @@ img{
     
 }
 
+/* Main header hierarchy here! */
+
+h1{
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0.5rem;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+h3{
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+p{
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
 .wrapper{
     display: grid;
 }
@@ -47,12 +67,11 @@ img{
 
 .main-nav ul{
     display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    list-style: none;
     grid-gap: 10px;
     padding: 0;
-    list-style: none;
     align-items: center;
-    /* repeat columns for each page, so 8 in this case */
-    grid-template-columns: repeat(8, 1fr);
 }
 
 .main-nav a{
@@ -65,7 +84,7 @@ img{
     text-transform: uppercase;
     font-size: 1rem;
     box-shadow: var(--shadow);
-}
+} 
 
 .main-nav a:hover{
     background:var(--dark);
@@ -83,7 +102,7 @@ img{
 .showcase-mid{
     grid-area: showcase-mid;
     min-height: 300px;
-    background-image: url();
+    background-image: url(img/Extra_Images/Concord_Pacific_Master_Plan_Area_CROPPED_DARK.jpg);
     background-size: 1700px;
     background-image:cover;
     background-position: center;
@@ -94,24 +113,18 @@ img{
     justify-content: center;
     box-shadow: var(--shadow);
     color: var(--light)
-
 }
 
-/* Main header hierarchy here! */
-.showcase-mid h1{
-    font-size: 4rem;
-    margin-bottom: 1rem;
+.showcase-top{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--dark);
+    box-shadow: var(--shadow);
+    color: var(--light)
 }
-.showcase-mid h3{
-    font-size: 1.4rem;
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-.showcase-mid p{
-    font-size: 1.1rem;
-    margin-top: 0;
-}
-
 
 /* Low Container */
 .low-container{
@@ -120,11 +133,6 @@ img{
     padding: 5rem;
     padding-bottom: 1rem;
 }
-
-.h3{
-    font-style: italic;
-}
-
 
 /* Boxes */
 .boxes{
@@ -181,21 +189,23 @@ footer{
 
 
 /* Media Queries */
-@media(max-width: 1050px){
+@media(max-width: 1150px){
     .main-nav ul{
         /* switch to 2 cols */
         grid-template-columns: 1fr 1fr;
     }
-    .showcase-mid h1{
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-    .showcase-mid h3, .low-container h3{
-        font-size: 1.2rem;
+    h1{
+        font-size: 2rem;
+        margin: 1rem;
+        }
+    h2{
+        font-size: 1.8rem;
+    }    
+    h3{
+        font-size: 1.1rem;
         font-style: italic;
         margin-bottom: 0.5rem;
     }
-    
 }
 
 @media(max-width: 600px){
@@ -204,8 +214,8 @@ footer{
         /* switch to 1 col */
         grid-template-columns: 1fr;
     }
-    .showcase-mid h1{
-        line-height: 3rem;
+    h1{
+        line-height: 2rem;
     }
     
 }
