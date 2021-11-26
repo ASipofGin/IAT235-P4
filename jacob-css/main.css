@@ -85,6 +85,7 @@ img{
     height: auto;
 }
 
+/*
 
 .main-nav ul{
     display: grid;
@@ -92,9 +93,10 @@ img{
     padding: 0;
     list-style: none;
     align-items: center;
-    /* repeat columns for each page, so 8 in this case */
     grid-template-columns: repeat(8, 1fr);
 }
+
+
 
 .main-nav a{
     display: block;
@@ -112,6 +114,8 @@ img{
     background:var(--dark);
     color: var(--light);
 }
+
+*/
 
 .mid-container{
     display: grid;

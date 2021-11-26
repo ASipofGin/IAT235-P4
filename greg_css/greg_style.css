@@ -141,6 +141,17 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
 }
 
+.box_extend{
+    align-items: baseline;
+    background: var(--light);
+    text-align: left;
+    text-justify: inter-cluster;
+    padding: 1rem 1rem;
+    box-shadow:var(--shadow);
+    max-width: 30rem;
+    max-height: 80rem;
+}
+
 .box{
     align-items: baseline;
     background: var(--light);
@@ -160,6 +171,7 @@ p{
     width: 500px;
     height: 500px;
     min-width: 250px;
+    max-height: 500px;
     object-fit: cover;
 }
 
