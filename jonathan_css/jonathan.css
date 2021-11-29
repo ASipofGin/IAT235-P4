@@ -1,0 +1,409 @@
+/* CSS Variables declared here, they are the colours we will be using throughout the page */
+
+:root{
+    --primary: rgb(240, 240, 240);
+    --dark: rgb(62, 67, 82);
+    --light: rgb(231, 231, 231);
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
+}
+
+/* Global Styling applied here, including border box to keep margins in check, set font family/colour, body text/img styles and button styles */
+html{
+    box-sizing: border-box;
+    font-family: Roboto, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--dark);
+}
+
+body{
+    background: rgb(194, 194, 194);
+    margin: 1rem 1rem;
+    line-height: 1.6rem;
+}
+
+.btn{
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+/* Main header hierarchy here! */
+
+h1{
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0.5rem;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 2.6rem;
+}
+h3{
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+p{
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+.floatLeft {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.floatCenter {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.floatRight {
+    text-align: Right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.wrapper{
+    display: grid;
+}
+
+/* Navigation */
+
+.sub-nav {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+.sub-nav a{
+    display: block;
+    background: var(--primary);
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    font-size: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.sub-nav a:hover{
+    background:var(--dark);
+    color: var(--light);
+}
+
+.main-nav ul{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    list-style: none;
+    grid-gap: 10px;
+    padding: 0;
+    align-items: center;
+}
+
+.main-nav a{
+    display: block;
+    background: var(--primary);
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1rem;
+    box-shadow: var(--shadow);
+} 
+
+.main-nav a:hover{
+    background:var(--dark);
+    color: var(--light);
+}
+
+.ini-main-nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    list-style: none;
+    grid-gap: 10px;
+    padding: 0;
+    align-items: center;
+}
+
+.ini-main-nav a{
+    display: block;
+    background: var(--primary);
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1rem;
+    box-shadow: var(--shadow);
+} 
+
+.ini-main-nav a:hover{
+    background:var(--dark);
+    color: var(--light);
+}
+
+/* Mid Container */
+.mid-container{
+    display: grid;
+    grid-template-areas: 
+    'showcase-mid showcase-mid';
+}
+
+.showcase-mid{
+    grid-area: showcase-mid;
+    min-height: 300px;
+    background-image: url(../Image/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg);
+    background-size: 1700px;
+    background-image:cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    color: var(--light)
+}
+
+.showcase-top{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--dark);
+    box-shadow: var(--shadow);
+    color: var(--light)
+}
+
+/* Low Container */
+.low-container{
+    display:inline-block;
+    text-align: center;
+    padding: 5rem;
+    padding-bottom: 1rem;
+}
+
+/* Boxes */
+.boxes{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+}
+
+/*If you want edge bleed boxes with margin */
+
+.box_fill{
+    align-items: baseline;
+    background: var(--light);
+    text-align: left;
+    text-justify: inter-cluster;
+    padding: 1rem 1rem;
+    box-shadow:var(--shadow);
+    max-width: 100%;
+    max-height: 40rem;
+}
+
+.box_extend{
+    align-items: baseline;
+    background: var(--light);
+    text-align: left;
+    text-justify: inter-cluster;
+    padding: 1rem 1rem;
+    box-shadow:var(--shadow);
+    max-width: 30rem;
+    max-height: 80rem;
+}
+
+.box{
+    align-items: baseline;
+    background: var(--light);
+    text-align: left;
+    text-justify: inter-cluster;
+    padding: 1rem 1rem;
+    box-shadow:var(--shadow);
+    max-width: 30rem;
+    max-height: 40rem;
+}
+
+.box_center{
+    justify-self: center;
+}
+
+.box-img{
+    width: 500px;
+    height: 500px;
+    min-width: 250px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* If you want end bleed image with margin*/
+
+.box_img_fill{
+    width: 100%;
+    height: 500px;
+    min-width: 250px;
+    max-height: 500px;
+    object-fit:cover;
+}
+
+/* Partnership Info */
+.info{
+    justify-self: center;
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../Image/SchoolDropOffPickup.jpg);
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+}
+
+.info2{
+    justify-self: center;
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../Image/contact-us-banner-1024x286.jpg);
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.info3{
+    justify-self: center;
+    min-height: 100px;
+    max-height: auto;
+    max-width: auto;
+    background-image: url(../Image/moveit-banner.jpg);
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+    margin-top: 3rem;'
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* Footer */
+footer{
+    margin-top: 2rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+}
+
+
+/* Media Queries */
+@media(max-width: 1150px){
+    .main-nav ul{
+        /* switch to 2 cols */
+        grid-template-columns: 1fr 1fr;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 1rem;
+        }
+    h2{
+        font-size: 1.8rem;
+    }    
+    h3{
+        font-size: 1.1rem;
+        font-style: italic;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media(max-width: 600px){
+    .main-nav ul{
+        grid-gap: 1rem;
+        /* switch to 1 col */
+        grid-template-columns: 1fr;
+    }
+    h1{
+        line-height: 2rem;
+    }
+    
+}
+
+@media(max-width: 1150px){
+    .ini-main-nav ul{
+        /* switch to 2 cols */
+        grid-template-columns: 1fr 1fr;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 1rem;
+        }
+    h2{
+        font-size: 1.8rem;
+    }    
+    h3{
+        font-size: 1.1rem;
+        font-style: italic;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media(max-width: 600px){
+    .ini-main-nav ul{
+        grid-gap: 1rem;
+        /* switch to 1 col */
+        grid-template-columns: 1fr;
+    }
+    h1{
+        line-height: 2rem;
+    }
+    
+}
