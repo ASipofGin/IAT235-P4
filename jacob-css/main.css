@@ -85,6 +85,7 @@ img{
     height: auto;
 }
 
+/*
 
 .main-nav ul{
     display: grid;
@@ -92,9 +93,10 @@ img{
     padding: 0;
     list-style: none;
     align-items: center;
-    /* repeat columns for each page, so 8 in this case */
     grid-template-columns: repeat(8, 1fr);
 }
+
+
 
 .main-nav a{
     display: block;
@@ -113,6 +115,8 @@ img{
     color: var(--light);
 }
 
+*/
+
 .mid-container{
     display: grid;
     grid-template-areas: 
@@ -122,7 +126,7 @@ img{
 .showcase-mid{
     grid-area: showcase-mid;
     min-height: 300px;
-    background-image: url(/img/Concord_Pacific_Master_Plan_Area_CROPPED_DARK.jpg);
+    background-image: url(../greg_img/img/Extra_Images/Concord_Pacific_Master_Plan_Area_CROPPED_DARK.jpg);
     background-size: 1700px;
     background-image:cover;
     background-position: center;
