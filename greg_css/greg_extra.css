@@ -1,0 +1,43 @@
+.showcase-mid{
+  margin-bottom: 1rem;
+}
+
+.boxes{
+    margin-bottom: 1rem;
+}
+
+
+/* Background Images Inside Of .info */
+
+/* Home Page */
+.benefits{
+    background-image: url(../greg_img/img/Extra_Images/TNMFamilyCouchMeeting_feature.jpg);
+}
+.focus{
+    background-image: url(../greg_img/img/Extra_Images/kids_walk_to_school.jpg);
+}
+
+
+/* Route Maps Page */
+.seymour {
+    background-image: url(../greg_img/img/Schools/admiral_seymour.jpeg);
+}
+.franklin{
+    background-image: url(../greg_img/img/Schools/sir_john_franklin.jpg);
+}
+.tecumseh{
+    width: 2fr;
+    background-image: url(../greg_img/img/Schools/tecumseh.jpg);
+    
+}
+.fraser{
+    background-image: url(../greg_img/img/Schools/simon_fraser.jpg);
+}
+.tillicum{
+    background-image: url(../greg_img/img/Schools/tillicum_annex.jpg);
+}
+
+
+
+
+
