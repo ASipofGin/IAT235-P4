@@ -6,6 +6,11 @@
     margin-bottom: 1rem;
 }
 
+.route_maps{
+    grid-gap: 10px;
+    grid-auto-columns: 1fr 1fr;
+}
+
 
 /* Background Images Inside Of .info */
 
@@ -18,7 +23,8 @@
 }
 
 
-/* Route Maps Page */
+/* Route Maps Page
+Images via google street view and school websites */
 .seymour {
     background-image: url(../greg_img/img/Schools/admiral_seymour.jpeg);
 }
@@ -31,7 +37,7 @@
     
 }
 .fraser{
-    background-image: url(../greg_img/img/Schools/simon_fraser.jpg);
+    background-image: url(../greg_img/img/Schools/simon_fraser.png);
 }
 .tillicum{
     background-image: url(../greg_img/img/Schools/tillicum_annex.jpg);

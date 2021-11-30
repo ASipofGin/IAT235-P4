@@ -1,9 +1,9 @@
 /* CSS Variables declared here, they are the colours we will be using throughout the page */
 
 :root{
-    --primary: rgb(240, 240, 240);
-    --dark: rgb(62, 67, 82);
-    --light: rgb(231, 231, 231);
+    --primary:  rgb(240, 240, 240);
+    --dark:     rgb(62, 67, 82);
+    --light:    rgb(231, 231, 231);
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.5);
 }
 
@@ -20,17 +20,29 @@ body{
     line-height: 1.6rem;
 }
 
+a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 .btn{
     background-color: var(--dark);
     color: var(--light);
     padding: 0.6rem 1.3rem;
     text-decoration: none;
+    text-align: center;
     border: 0;
+    max-width: 10rem;
 }
 
 .btn:hover{
     background:var(--light);
     color: var(--dark);
+    text-decoration: none;
 }
 
 img{
