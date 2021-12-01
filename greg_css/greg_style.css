@@ -270,6 +270,7 @@ footer{
     background: var(--dark);
     color: var(--light);
     text-align: center;
+    text-decoration: none;
 }
 
 
