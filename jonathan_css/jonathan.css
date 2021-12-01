@@ -20,6 +20,19 @@ body{
     line-height: 1.6rem;
 }
 
+a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.inline_link{
+    text-decoration: underline;
+}
+
 .btn{
     background-color: var(--dark);
     color: var(--light);
