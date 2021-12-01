@@ -12,14 +12,18 @@
 }
 
 
+
+
 /* Background Images Inside Of .info */
 
 /* Home Page */
+
+/* img via  */
 .benefits{
-    background-image: url(../greg_img/img/Extra_Images/TNMFamilyCouchMeeting_feature.jpg);
+    background-image: url(../greg_img/img/new_banner_imgs/jess-bailey-l3N9Q27zULw-unsplash.jpg);
 }
 .focus{
-    background-image: url(../greg_img/img/Extra_Images/kids_walk_to_school.jpg);
+    background-image: url(../greg_img/img/new_banner_imgs/ben-wicks-iDCtsz-INHI-unsplash.jpg);
 }
 
 
