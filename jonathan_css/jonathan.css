@@ -111,8 +111,6 @@ p{
     grid-template-columns: repeat(2,1fr);
     color: var(--dark);
     justify-items: left;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
 }
 
 .box_info_image1{
