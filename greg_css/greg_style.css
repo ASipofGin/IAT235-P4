@@ -111,6 +111,7 @@ p{
 	right:40px;
 	background-color:var(--dark);
     background-image: url(../img/backtotop.png);
+    /*img from https://www.rndwafers.com/images/uparrow.png*/
     background-size: 80%;
     background-position: center;
 	color:#FFF;
