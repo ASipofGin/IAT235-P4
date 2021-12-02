@@ -265,6 +265,155 @@ p{
     margin-bottom: 1rem;
 }
 
+.ss-info{
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../img/New_sidewalks_and_curbs_dimmed.jpg);
+    /* Photo via provided P4 */
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+}
+
+.wce-info{
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../img/Bicycle_racks_dimmed.jpg);
+    /* Photo via provided P4 */
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+}
+
+.wbrmg-info{
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../img/walk-bike-roll-time-landing-dimmed.jpg);
+    /* Photo via https://vancouver.ca/images/cov/feature/walk-bike-roll-time-landing.jpg */
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+}
+
+
+.wsb-info{
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../img/british-schoolchildren-in-a-walking-bus-1030x579-dimmed.jpg);
+    /* Photo via https://parkside.herts.sch.uk/wp-content/uploads/2019/09/british-schoolchildren-in-a-walking-bus-1030x579.jpg
+ */
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+}
+
+
+.cs-info{
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../img/street-dimmed.jpg);
+    /* Photo via https://zingdogg.files.wordpress.com/2015/08/street.jpg */
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+}
+
+.gm-info{
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../img/maxresdefault-dimmed.jpg);
+    /* Photo via https://i.ytimg.com/vi/RqxJb_R8y9E/maxresdefault.jpg */
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+}
+
+.ppa-info{
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../img/Apprentice-Kids-on-Dock-dimmed.jpg);
+    /* Photo via https://i1.wp.com/calgaryjournal.ca/wp-content/uploads/2021/03/Apprentice-Kids-on-Dock.jpg?fit=1200%2C684&ssl=1 */
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+}
+
+.hbsw-info{
+    min-height: 100px;
+    max-height:auto;
+    max-width: auto;
+    background-image: url(../img/HUBs_bike_to_school_week-dimmed.jpg);
+    /* Photo via provided P4 */
+    background-size: cover;
+    background-image: cover;
+    background-position: center;
+    padding: 3rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--light);
+    justify-items: left;
+    margin-bottom: 1rem;
+}
+
+
+
 /* Footer */
 footer{
     margin-top: 2rem;
