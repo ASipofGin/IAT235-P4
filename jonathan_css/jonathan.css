@@ -111,7 +111,7 @@ p{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2,1fr);
-    color: var(--light);
+    color: var(--dark);
     justify-items: left;
     margin-bottom: 1rem;
     margin-top: 1rem;
