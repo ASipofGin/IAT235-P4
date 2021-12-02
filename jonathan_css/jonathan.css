@@ -102,6 +102,13 @@ p{
     margin-bottom: auto;
 }
 
+.floatBottomRight {
+    text-align: center;
+    display: block;
+    margin-left: 20rem;
+    margin-right: 0;
+}
+
 .box_info{
     min-height: 100px;
     background: var(--light);
@@ -111,7 +118,7 @@ p{
     grid-template-columns: repeat(2,1fr);
     color: var(--dark);
     justify-items: left;
-}
+ }
 
 .box_info_image1{
     min-height: 100px;
