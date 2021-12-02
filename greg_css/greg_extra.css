@@ -1,3 +1,5 @@
+/* Extra modifications to Home Page and Route Maps page */
+
 .showcase-mid{
   margin-bottom: 1rem;
 }
@@ -16,35 +18,41 @@
 
 /* Background Images Inside Of .info */
 
-/* Home Page */
+/* Home Page background images */
 
-/* img via  */
 .benefits{
     background-image: url(../greg_img/img/new_banner_imgs/jess-bailey-l3N9Q27zULw-unsplash.jpg);
+    /* Photo by JESS BAILEY https://unsplash.com/@jessbaileydesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */
 }
 .focus{
     background-image: url(../greg_img/img/new_banner_imgs/ben-wicks-iDCtsz-INHI-unsplash.jpg);
+    /* Photo by BEN WICKS https://unsplash.com/@profwicks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */
 }
 
 
-/* Route Maps Page
+/* Route Maps Page background images
+
 Images via google street view and school websites */
 .seymour {
     background-image: url(../greg_img/img/Schools/admiral_seymour.jpeg);
+    /* Photo via https://strathcona-residents.org/wp-content/uploads/2021/02/IMG_1217-1-scaled.jpeg */
 }
 .franklin{
     background-image: url(../greg_img/img/Schools/sir_john_franklin.jpg);
+    /* Photo via https://www.vsb.bc.ca/repository/sbpicturelibrary/684b6640-c28e-48bc-84d5-e5981607020b_OminousFrontOfFranklin1.jpg?Width=840 */
 }
 .tecumseh{
     width: 2fr;
     background-image: url(../greg_img/img/Schools/tecumseh.jpg);
-    
+    /* Photo via https://www.vsb.bc.ca/repository/SBPictureLibrary/4453d19c-df8c-4ba4-aad6-ec5ed8bb62a2_SchoolCloseupwinter.jpg */
 }
 .fraser{
     background-image: url(../greg_img/img/Schools/simon_fraser.png);
+    /* Photo via Google Earth screenshot */
 }
 .tillicum{
     background-image: url(../greg_img/img/Schools/tillicum_annex.jpg);
+    /* Photo via https://www.vsb.bc.ca/schools/tillicum-annex/Style%20Library/sbimg/190214/8229c683-5490-42d8-ab0f-658bf7cabea7.jpg */
 }
 
 

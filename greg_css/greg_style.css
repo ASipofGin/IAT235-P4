@@ -133,6 +133,7 @@ p{
     grid-area: showcase-mid;
     min-height: 300px;
     background-image: url(../greg_img/img/Extra_Images/Concord_Pacific_Master_Plan_Area_CROPPED_DARK.jpg);
+    /* Photo via https://upload.wikimedia.org/wikipedia/commons/5/57/Concord_Pacific_Master_Plan_Area.jpg */
     background-size: 1700px;
     background-image:cover;
     background-position: center;
@@ -238,6 +239,7 @@ p{
     max-height:auto;
     max-width: auto;
     background-image: url(../greg_img/img/Extra_Images/handshake_DARK.jpg);
+    /* Photo via https://d18lkz4dllo6v2.cloudfront.net/cumulus_uploads/entry/2020-11-04/GettyImages-678074927.jpg */
     background-size: cover;
     background-image: cover;
     background-position: center;
