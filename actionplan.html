@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	
-	<!-- SFU IAT235 P4 Action Plan Page by Greg, Andy, Jacob, Jonathan -->
-    
+
+    <!-- SFU IAT235 P4 Action Plan Page by Greg, Andy, Jacob, Jonathan -->
+
     <!-- additional HTML/CSS resources via:
     https://css-tricks.com/apply-a-filter-to-a-background-image/
     https://www.youtube.com/watch?v=RhUuMl3R1PE&ab_channel=DevDreamer
@@ -14,68 +14,88 @@
     https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
     -->
 
-	<head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Action Plan | Vancouver BC School Active Travel Program </title>
+    <!-- Link to CSS here -->
+    <link rel="stylesheet" href="./greg_css/greg_style.css">
+    
+    <!-- Window Title -->
+    <title>Action Plan | Vancouver BC School Active Travel Program</title>
+</head>
+<!-- end Head -->
 
-		<link rel="stylesheet" href="./css/grid.css">
-		<link rel="stylesheet" href="./css/main.css">
-	</head>
+<!-- Main Page Body, it is enveloped in the class "wrapper" for better control -->
+<body>
+    <div class="wrapper">
 
-	<body>
-
-		<header>
-
-			<h2>Action Plan</h2>
-
-		</header>
-
-		<div class="grid three-column">
-
-
-		<section id="actionplan">
-				
-			<h2>How we help overcome school travel challenges</h2>
-
-			<h3>
-				See how we improve infrastructure and support activities to encourage active travel.
-				
-			</h3>
-
-			<p>
-				Click the images for more information
-			</p>
-
-		</section>
-
-
-
-		<section id="art">
-			<figure>
-
-				<img src="./images/Student_art.jpg" alt="A picture of art murals" width="1200" height="627">
-
-			</figure>
-
-		</section>
-
-		<section id="infrastructure">
-			<figure>
-
-				<img src="./images/Barriers.jpg" alt="A picture of infrastructure" width="1200" height="627">
-
-			</figure>
-
-		</section>
-
-
-
-	</body>
-</html>
-
-
-
-
+        <!-- Top Container, holds the main header/image for the page
         
+        is this necessary??
+        
+        -->
+        <!-- <section class="top-container">
+            <header class="showcase-top">
+                <h2>School Active Travel Program</h2>
+            </header>
+        </section> -->
+
+        <section class="top-container">
+            <header class="showcase-top">
+                <h1>Action Plan</h1>
+            </header>
+        </section>
+
+        <!-- Navigation, using an unordered list and list item tags -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="route_maps.html">Route Maps</a></li>
+                <li><a href="actionplan_new.html">Action Plan</a></li>
+                <li><a href="initiatives.html">Initiatives</a></li>
+                <li><a href="art.html">Art</a></li>
+                <li><a href="Infrastructure.html">Infrastructure</a></li>
+                <li><a href="contact & comment.html">Contact</a></li>
+                <li><a target="_blank" href="https://vancouver.ca/">Vancouver.ca</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Mid Container, holds the subheading/info for the page -->
+        <section class="mid-container">
+            <header class="showcase-mid">
+                <h2>How we help overcome school travel challenges</h2>
+                <h3>See how we improve infrastructure and support activities to encourage active travel.
+                </h3>
+                <p>Click the images for more information.</p>
+            </header>
+        </section>
+
+<!-- FIX THIS IF WE HAVE TIME PLZ FIND SPACER!-->
+        
+        <!-- Box Content -->
+        <section class="boxes box-margin-top">          
+            <div class="box_fill">
+                <h2 class="center-text">Art</h2>
+                <!-- image here -->
+                <img class="box_img_fill" src="greg_img/img/P4_Images/Student_art.jpg" alt="">
+            </div>
+
+            <div class="box_fill center">
+                <h2 class="center-text">Infrastructure</h2>
+                <!-- image here -->
+                <img class="box_img_fill" src="greg_img/img/P4_Images/Pedestrian_or_bike_activated_signals.jpg" alt="">
+            </div>
+
+        </section>
+
+      <!-- Footer -->
+      <footer><a class="inline_link" href="https://www.sfu.ca/siat.html
+        ">SFU</a> IAT235 P4 by Greg, Andy, Jacob, Jonathan &copy; 2021</footer>
+
+    </div>  
+    <!-- Wrapper ends here -->
+</body>
+</html>
