@@ -166,7 +166,6 @@ p{
     align-items: baseline;
     background: var(White);
     text-align: left;
-    text-justify: inter-cluster;
     padding: 1rem 1rem;
     box-shadow:var(--shadow);
     max-width: 30rem;
@@ -309,7 +308,6 @@ p{
     align-items: baseline;
     background: var(--light);
     text-align: left;
-    text-justify: inter-cluster;
     padding: 1rem 1rem;
     box-shadow:var(--shadow);
     max-width: 100%;
@@ -320,7 +318,6 @@ p{
     align-items: baseline;
     background: var(--light);
     text-align: left;
-    text-justify: inter-cluster;
     padding: 1rem 1rem;
     box-shadow:var(--shadow);
     max-width: 30rem;
@@ -331,7 +328,6 @@ p{
     align-items: baseline;
     background: var(--light);
     text-align: left;
-    text-justify: inter-cluster;
     padding: 1rem 1rem;
     box-shadow:var(--shadow);
     max-width: 30rem;
@@ -414,7 +410,7 @@ footer{
 
 
 /* Media Queries */
-@media(max-width: 1150px){
+@media(max-width: 71.875rem){
     .main-nav ul{
         /* switch to 2 cols */
         grid-template-columns: 1fr 1fr;
@@ -433,7 +429,7 @@ footer{
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 37.5rem){
     .main-nav ul{
         grid-gap: 1rem;
         /* switch to 1 col */
@@ -445,7 +441,7 @@ footer{
     
 }
 
-@media(max-width: 1150px){
+@media(max-width: 71.875rem){
     .ini-main-nav ul{
         /* switch to 2 cols */
         grid-template-columns: 1fr 1fr;
@@ -464,7 +460,7 @@ footer{
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 37.5rem){
     .ini-main-nav ul{
         grid-gap: 1rem;
         /* switch to 1 col */
