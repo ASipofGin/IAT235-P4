@@ -164,7 +164,7 @@ p{
 
 .boxWhite{
     align-items: baseline;
-    background: var(White);
+    background-color: white;
     text-align: left;
     padding: 1rem 1rem;
     box-shadow:var(--shadow);
