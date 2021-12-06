@@ -29,6 +29,12 @@ a:hover{
     text-decoration: underline;
 }
 
+
+.inline_link_dark{
+    color: var(--dark);
+    text-decoration: underline;
+}
+
 .inline_link{
     text-decoration: underline;
 }
